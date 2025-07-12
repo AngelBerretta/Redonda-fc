@@ -1,0 +1,8 @@
+// Importar todos los partials con @use
+@use 'base/generales';
+@use 'base/queries';
+@use 'base/functionalidades';
+
+@use 'components/header';
+@use 'components/main';
+@use 'components/footer';

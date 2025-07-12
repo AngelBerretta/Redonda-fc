@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de Fútbol | RedondaFC</title>
+    <!-- Bootstrap CSS (solo para navbar) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Últimas noticias del mundo del fútbol, transferencias, lesiones y análisis">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="main-header navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <div class="logo-container">
+                <img src="../img/logo.png" alt="RedondaFC Logo" class="logo" width="50" height="50">
+                <a class="navbar-brand fs-4" href="../index.html">RedondaFC</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="main-nav collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="noticias.html" class="nav-link active" aria-current="page">Noticias</a></li>
+                    <li class="nav-item"><a href="equipos.html" class="nav-link">Equipos</a></li>
+                    <li class="nav-item"><a href="partidos.html" class="nav-link">Partidos</a></li>
+                    <li class="nav-item"><a href="estadisticas.html" class="nav-link">Estadísticas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content news-page">
+        <div class="content-container">
+            <h1 class="page-title">Últimas Noticias</h1>
+            
+            <!-- Filtros -->
+            <section class="news-filters">
+                <div class="filters-grid">
+                    <div class="filter-buttons">
+                        <button class="btn-custom active">Todas</button>
+                        <button class="btn-custom">Ligas</button>
+                        <button class="btn-custom">Selecciones</button>
+                        <button class="btn-custom">Transferencias</button>
+                        <button class="btn-custom">Lesiones</button>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="Buscar noticias...">
+                        <button class="btn-custom btn-primary">Buscar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lista de Noticias -->
+            <div class="news-container">
+                <article class="news-article" id="noticia1">
+                    <div class="news-grid">
+                        <img src="../img/noticia1.jpg" class="news-img" alt="Messi celebrando">
+                        <div class="news-content">
+                            <span class="news-badge news-badge-warning">MLS</span>
+                            <h2 class="news-title">Messi lidera la MLS con otro hat-trick</h2>
+                            <p class="news-meta">Por Carlos Sánchez | <time datetime="2025-10-15">15 de Octubre, 2025</time></p>
+                            <p class="news-text">Lionel Messi volvió a demostrar por qué es considerado uno de los mejores futbolistas de todos los tiempos al marcar tres goles en la victoria del Inter Miami ante Los Angeles FC por 4-1. El astro argentino...</p>
+                            <p class="news-text">Con estos tres goles, Messi suma ya 11 tantos en apenas 9 partidos en la MLS, liderando la tabla de goleadores pese a haber llegado a mitad de temporada. Sus compañeros...</p>
+                            <a href="#" class="news-link">Leer más →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Paginación -->
+            <nav class="pagination-container" aria-label="Paginación de noticias">
+                <ul class="pagination-list">
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Siguiente">
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="content-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4 class="footer-title">RedondaFC</h4>
+                    <p class="footer-text">El sitio líder en información futbolística desde 2025.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <p class="footer-contact">info@redondafc.com</p>
+                    <p class="footer-contact">+34 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2025 RedondaFC - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Iconos Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- JS Personalizado -->
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

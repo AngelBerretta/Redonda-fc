@@ -1,0 +1,75 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-banner img {
+        height: 300px;
+    }
+    
+    .banner-title {
+        font-size: 2rem;
+    }
+    
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .player-img {
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .team-logo-container {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .team-logo-sm {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .team-logo-xs {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .filters-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-title {
+        font-size: 1.5rem;
+    }
+    
+    .banner-text {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .page-title {
+        font-size: 1.75rem;
+    }
+    
+    .team-logo-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .team-logo-sm {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .team-logo-xs {
+        width: 20px;
+        height: 20px;
+    }
+}
