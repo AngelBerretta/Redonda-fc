@@ -1,19 +1,62 @@
+@charset "UTF-8";
 /* Estilos base */
 body {
-    font-family: var(--font-main);
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--light-color);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 /* Contenedor principal */
 .content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
+/* Títulos de sección */
+.section-title {
+  color: var(--primary-color);
+  position: relative;
+  padding-bottom: 0.75rem;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+.page-title {
+  font-size: 2.25rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Cards personalizadas */
+.news-card, .matches-card, .player-card, .team-card, .comparison-card, .stats-card, .match-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover, .matches-card:hover, .player-card:hover, .team-card:hover, .comparison-card:hover, .stats-card:hover, .match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaciado adicional para estadísticas por liga desde el footer */
+.league-stats {
+  margin-bottom: 4rem;
+}
